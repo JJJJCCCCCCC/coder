@@ -181,4 +181,4 @@ python -m unittest discover -s tests -v
 
 ## 来源与许可
 
-Coder 的集成运行时源自 shareAI Lab 的 [learn-claude-code s15](https://github.com/shareAI-lab/learn-claude-code/tree/main/s15_integrated_harness)。本仓库将相关机制拆分为 Python 模块，并围绕独立 CLI 接入 DeepSeek 模型与搜索、PowerShell 和本地 stdio MCP 示例。引入部分的 MIT 许可证和版权声明见 [`LICENSE.learn-cc`](LICENSE.learn-cc)。仓库暂无适用于新增代码的单独许可声明。
+Coder 的架构灵感来自于 [learn-claude-code](https://github.com/shareAI-lab/learn-claude-code)。本仓库将相关机制设计为 Python 模块，并围绕独立 CLI 接入 DeepSeek 模型与搜索、PowerShell 和本地 stdio MCP 示例。引入部分的 MIT 许可证和版权声明见 [`LICENSE.learn-cc`](LICENSE.learn-cc)。仓库暂无适用于新增代码的单独许可声明。
