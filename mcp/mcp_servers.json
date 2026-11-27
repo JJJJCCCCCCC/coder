@@ -1,0 +1,6 @@
+{
+  "demo": {
+    "command": "{python}",
+    "args": ["-u", "{server_dir}/demo_server.py"]
+  }
+}
