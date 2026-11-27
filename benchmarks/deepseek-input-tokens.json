@@ -1,0 +1,638 @@
+{
+  "summary": {
+    "suite": "synthetic-tool-results-v1",
+    "synthetic_cases": 8,
+    "successful_receipts": 24,
+    "input_tokens_including_envelope": {
+      "original": 56937,
+      "compressed": 8431,
+      "envelope": 2752
+    },
+    "original_incremental_input_tokens": 54185,
+    "compressed_incremental_input_tokens": 5679,
+    "incremental_reduction": 0.8951923964196733,
+    "whole_request_input_reduction": 0.8519240564132287,
+    "target_reduction": 0.85,
+    "met_target": true,
+    "visible_code_correct": {
+      "original": 4,
+      "compressed": 6
+    },
+    "byte_exact_full_archive_recovery": 8,
+    "tool_use_id_retained": 8,
+    "per_case": [
+      {
+        "case": "jsonl_manifest",
+        "original_incremental": 7425,
+        "compressed_incremental": 769,
+        "reduction": 0.8964309764309765
+      },
+      {
+        "case": "test_table",
+        "original_incremental": 5919,
+        "compressed_incremental": 617,
+        "reduction": 0.8957594188207467
+      },
+      {
+        "case": "build_log",
+        "original_incremental": 7235,
+        "compressed_incremental": 748,
+        "reduction": 0.8966136834830685
+      },
+      {
+        "case": "markdown_notes",
+        "original_incremental": 5713,
+        "compressed_incremental": 612,
+        "reduction": 0.8928758970768422
+      },
+      {
+        "case": "csv_inventory",
+        "original_incremental": 8619,
+        "compressed_incremental": 893,
+        "reduction": 0.8963916927717832
+      },
+      {
+        "case": "unicode_report",
+        "original_incremental": 10049,
+        "compressed_incremental": 1043,
+        "reduction": 0.896208577967957
+      },
+      {
+        "case": "source_excerpt",
+        "original_incremental": 6712,
+        "compressed_incremental": 706,
+        "reduction": 0.8948152562574494
+      },
+      {
+        "case": "repeated_characters",
+        "original_incremental": 2513,
+        "compressed_incremental": 291,
+        "reduction": 0.8842021488261043
+      }
+    ]
+  },
+  "archive_audit": [
+    {
+      "category": "jsonl_manifest",
+      "raw_sha256": "108e4edf52f0220f05228efddb74605957faf8436f3f93af7c8dd059419901f0",
+      "archive_sha256": "108e4edf52f0220f05228efddb74605957faf8436f3f93af7c8dd059419901f0",
+      "archive_tail_recovered": true,
+      "tool_use_id_retained": true
+    },
+    {
+      "category": "test_table",
+      "raw_sha256": "13b06532f129674304769e9839e051be3442f30cbad46f7f6452ef2c6ed0e649",
+      "archive_sha256": "13b06532f129674304769e9839e051be3442f30cbad46f7f6452ef2c6ed0e649",
+      "archive_tail_recovered": true,
+      "tool_use_id_retained": true
+    },
+    {
+      "category": "build_log",
+      "raw_sha256": "e452f0d8b719339436bb5b8b6df337b7db3a00f5fa3005340f2f96592ad77fa9",
+      "archive_sha256": "e452f0d8b719339436bb5b8b6df337b7db3a00f5fa3005340f2f96592ad77fa9",
+      "archive_tail_recovered": true,
+      "tool_use_id_retained": true
+    },
+    {
+      "category": "markdown_notes",
+      "raw_sha256": "f9fb9f7c1fb581d29ce5850b679fb9f80d797a21eda79c34cc92af103f574b6d",
+      "archive_sha256": "f9fb9f7c1fb581d29ce5850b679fb9f80d797a21eda79c34cc92af103f574b6d",
+      "archive_tail_recovered": true,
+      "tool_use_id_retained": true
+    },
+    {
+      "category": "csv_inventory",
+      "raw_sha256": "e7259d73a9403b05c78beea431960ac001667d178732d51e221accd6851f27a3",
+      "archive_sha256": "e7259d73a9403b05c78beea431960ac001667d178732d51e221accd6851f27a3",
+      "archive_tail_recovered": true,
+      "tool_use_id_retained": true
+    },
+    {
+      "category": "unicode_report",
+      "raw_sha256": "ee101a74aaa1b270fb4fde49ffa8a4329687104c50cace5e0e6b397559ed5b2f",
+      "archive_sha256": "ee101a74aaa1b270fb4fde49ffa8a4329687104c50cace5e0e6b397559ed5b2f",
+      "archive_tail_recovered": true,
+      "tool_use_id_retained": true
+    },
+    {
+      "category": "source_excerpt",
+      "raw_sha256": "ff9af44b8bf7a3a94434e6e96f8a373f35ec57da7ffc1be24762e2870c7494d9",
+      "archive_sha256": "ff9af44b8bf7a3a94434e6e96f8a373f35ec57da7ffc1be24762e2870c7494d9",
+      "archive_tail_recovered": true,
+      "tool_use_id_retained": true
+    },
+    {
+      "category": "repeated_characters",
+      "raw_sha256": "a764903dc8255775e2560e46ed756470c4f2bd49cc469e644aba2a6942280135",
+      "archive_sha256": "a764903dc8255775e2560e46ed756470c4f2bd49cc469e644aba2a6942280135",
+      "archive_tail_recovered": true,
+      "tool_use_id_retained": true
+    }
+  ],
+  "receipts": [
+    {
+      "case": "repeated_characters",
+      "arm": "compressed",
+      "completion_id": "877cf541-1916-43ba-80f2-a83364d344c6",
+      "model": "deepseek-flash",
+      "status": 200,
+      "usage": {
+        "input_tokens": 636,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 5,
+        "service_tier": "standard"
+      },
+      "total_input_tokens": 636,
+      "payload_sha256": "d53f6862c9874a69e0f6bb3126354cf40f339bba8136140b714b0f76cc232eb1",
+      "result_sha256": "16cce3f0a2fd2df05478de87a0a5ed1f015c2b67a29ab743a91e57f83d8f8c0a",
+      "result_characters": 2088,
+      "response_text": "VISIBLE-442367",
+      "visible_code_correct": true,
+      "expected_visible_code": "VISIBLE-442367"
+    },
+    {
+      "case": "csv_inventory",
+      "arm": "envelope",
+      "completion_id": "e0571c85-229e-4202-b7d7-0bae70be5832",
+      "model": "deepseek-flash",
+      "status": 200,
+      "usage": {
+        "input_tokens": 344,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 17,
+        "service_tier": "standard"
+      },
+      "total_input_tokens": 344,
+      "payload_sha256": "0fe290d8771b17edfe80d1d879a98f2f411a0ae2567cded50463b0d8dc6fa2d6",
+      "result_sha256": "cdb4ee2aea69cc6a83331bbe96dc2caa9a299d21329efb0336fc02a82e1839a8",
+      "result_characters": 1,
+      "response_text": "The tool returned only `.` — no visible validation code was present in the result.",
+      "visible_code_correct": false,
+      "expected_visible_code": "VISIBLE-928651"
+    },
+    {
+      "case": "source_excerpt",
+      "arm": "envelope",
+      "completion_id": "5d328f93-ae9a-4238-9e15-de5aa14a221a",
+      "model": "deepseek-flash",
+      "status": 200,
+      "usage": {
+        "input_tokens": 344,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 17,
+        "service_tier": "standard"
+      },
+      "total_input_tokens": 344,
+      "payload_sha256": "d558052c2bea093b15c96d27601ae02388aa5f921c1f70950c3d422dec37ba2e",
+      "result_sha256": "cdb4ee2aea69cc6a83331bbe96dc2caa9a299d21329efb0336fc02a82e1839a8",
+      "result_characters": 1,
+      "response_text": "The tool returned only `.` — no visible validation code was present in the result.",
+      "visible_code_correct": false,
+      "expected_visible_code": "VISIBLE-125092"
+    },
+    {
+      "case": "markdown_notes",
+      "arm": "original",
+      "completion_id": "c6bdce70-bac8-45d3-833b-ba831f7dd46e",
+      "model": "deepseek-flash",
+      "status": 200,
+      "usage": {
+        "input_tokens": 5802,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 256,
+        "output_tokens": 5,
+        "service_tier": "standard"
+      },
+      "total_input_tokens": 6058,
+      "payload_sha256": "8705f65b3ac9152370b0d97580ff2de808b3a8c8fbef08a919acb8b91f4af6e2",
+      "result_sha256": "f9fb9f7c1fb581d29ce5850b679fb9f80d797a21eda79c34cc92af103f574b6d",
+      "result_characters": 20000,
+      "response_text": "VISIBLE-621973",
+      "visible_code_correct": true,
+      "expected_visible_code": "VISIBLE-621973"
+    },
+    {
+      "case": "source_excerpt",
+      "arm": "original",
+      "completion_id": "062ee5f4-9fa8-407e-b0be-144dce6ebd33",
+      "model": "deepseek-flash",
+      "status": 200,
+      "usage": {
+        "input_tokens": 6800,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 256,
+        "output_tokens": 11,
+        "service_tier": "standard"
+      },
+      "total_input_tokens": 7056,
+      "payload_sha256": "9a77698facdeeea1dbeb942090efe2f346ae820d41556331a10dbd15b81317ab",
+      "result_sha256": "ff9af44b8bf7a3a94434e6e96f8a373f35ec57da7ffc1be24762e2870c7494d9",
+      "result_characters": 20000,
+      "response_text": "Visible validation code: **VISIBLE-125092**",
+      "visible_code_correct": false,
+      "expected_visible_code": "VISIBLE-125092"
+    },
+    {
+      "case": "test_table",
+      "arm": "original",
+      "completion_id": "c8f32edb-331c-48a5-a97c-46b2001e8a2c",
+      "model": "deepseek-flash",
+      "status": 200,
+      "usage": {
+        "input_tokens": 6006,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 256,
+        "output_tokens": 11,
+        "service_tier": "standard"
+      },
+      "total_input_tokens": 6262,
+      "payload_sha256": "1d5fae7361d3e315d046c546e91741e2116c0fe5b178394a6847c8a1ff995dea",
+      "result_sha256": "13b06532f129674304769e9839e051be3442f30cbad46f7f6452ef2c6ed0e649",
+      "result_characters": 20000,
+      "response_text": "Visible validation code: **VISIBLE-592212**",
+      "visible_code_correct": false,
+      "expected_visible_code": "VISIBLE-592212"
+    },
+    {
+      "case": "build_log",
+      "arm": "envelope",
+      "completion_id": "2f1bd986-60c2-4547-bc17-176ad3077547",
+      "model": "deepseek-flash",
+      "status": 200,
+      "usage": {
+        "input_tokens": 215,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 128,
+        "output_tokens": 17,
+        "service_tier": "standard"
+      },
+      "total_input_tokens": 343,
+      "payload_sha256": "11b16195411150258cf354d21895027db6a680587d5895b2b000c72b54443d68",
+      "result_sha256": "cdb4ee2aea69cc6a83331bbe96dc2caa9a299d21329efb0336fc02a82e1839a8",
+      "result_characters": 1,
+      "response_text": "The tool returned only `.` — there's no visible validation code in the result.",
+      "visible_code_correct": false,
+      "expected_visible_code": "VISIBLE-724361"
+    },
+    {
+      "case": "csv_inventory",
+      "arm": "compressed",
+      "completion_id": "09417bc7-6adc-486d-b9d1-8762ecd859a8",
+      "model": "deepseek-flash",
+      "status": 200,
+      "usage": {
+        "input_tokens": 981,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 256,
+        "output_tokens": 5,
+        "service_tier": "standard"
+      },
+      "total_input_tokens": 1237,
+      "payload_sha256": "071c653875f8ae10db472c3b0b4a4c71357552febb6b96f47208220f3a5e6ce7",
+      "result_sha256": "010525844f4d8cd7f7580b28717a9763c814a49637471611c5f154f34807b282",
+      "result_characters": 2082,
+      "response_text": "VISIBLE-928651",
+      "visible_code_correct": true,
+      "expected_visible_code": "VISIBLE-928651"
+    },
+    {
+      "case": "repeated_characters",
+      "arm": "original",
+      "completion_id": "86f1b2d2-b7ea-4b6e-93cb-2eeb5c4a12c9",
+      "model": "deepseek-flash",
+      "status": 200,
+      "usage": {
+        "input_tokens": 2346,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 512,
+        "output_tokens": 5,
+        "service_tier": "standard"
+      },
+      "total_input_tokens": 2858,
+      "payload_sha256": "59d062e9ae7e0c72d08dc0e3e097b58cca746e74f8e84b17f336b05af873b9b2",
+      "result_sha256": "a764903dc8255775e2560e46ed756470c4f2bd49cc469e644aba2a6942280135",
+      "result_characters": 20000,
+      "response_text": "VISIBLE-442367",
+      "visible_code_correct": true,
+      "expected_visible_code": "VISIBLE-442367"
+    },
+    {
+      "case": "unicode_report",
+      "arm": "original",
+      "completion_id": "d075e34e-0c10-4bc9-bf80-32b4da6638c1",
+      "model": "deepseek-flash",
+      "status": 200,
+      "usage": {
+        "input_tokens": 10136,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 256,
+        "output_tokens": 5,
+        "service_tier": "standard"
+      },
+      "total_input_tokens": 10392,
+      "payload_sha256": "dc4a35bd3d25d51f9410821d46a64f509807c16cede2efb4db3bc454588c1cb2",
+      "result_sha256": "ee101a74aaa1b270fb4fde49ffa8a4329687104c50cace5e0e6b397559ed5b2f",
+      "result_characters": 20000,
+      "response_text": "VISIBLE-435425",
+      "visible_code_correct": true,
+      "expected_visible_code": "VISIBLE-435425"
+    },
+    {
+      "case": "csv_inventory",
+      "arm": "original",
+      "completion_id": "98cc9d50-5de1-456c-a88f-0b0e9c9751b0",
+      "model": "deepseek-flash",
+      "status": 200,
+      "usage": {
+        "input_tokens": 7811,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 1152,
+        "output_tokens": 11,
+        "service_tier": "standard"
+      },
+      "total_input_tokens": 8963,
+      "payload_sha256": "8ec0b2974055315862630cbce7727d742b56cf21c710e17ee0d85e29afa160c4",
+      "result_sha256": "e7259d73a9403b05c78beea431960ac001667d178732d51e221accd6851f27a3",
+      "result_characters": 20000,
+      "response_text": "Visible validation code: **VISIBLE-928651**",
+      "visible_code_correct": false,
+      "expected_visible_code": "VISIBLE-928651"
+    },
+    {
+      "case": "unicode_report",
+      "arm": "envelope",
+      "completion_id": "20db7fee-5b81-4e74-a171-8b35abcf6b70",
+      "model": "deepseek-flash",
+      "status": 200,
+      "usage": {
+        "input_tokens": 215,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 128,
+        "output_tokens": 17,
+        "service_tier": "standard"
+      },
+      "total_input_tokens": 343,
+      "payload_sha256": "b5179021db45e02a925f9833ce82aa1865fa41357024cd0af32502612cc05cbd",
+      "result_sha256": "cdb4ee2aea69cc6a83331bbe96dc2caa9a299d21329efb0336fc02a82e1839a8",
+      "result_characters": 1,
+      "response_text": "The tool returned only `.` — there's no visible validation code in the result.",
+      "visible_code_correct": false,
+      "expected_visible_code": "VISIBLE-435425"
+    },
+    {
+      "case": "repeated_characters",
+      "arm": "envelope",
+      "completion_id": "0a8d8ab6-9c73-4bb5-b93f-70fa3f273ccf",
+      "model": "deepseek-flash",
+      "status": 200,
+      "usage": {
+        "input_tokens": 217,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 128,
+        "output_tokens": 17,
+        "service_tier": "standard"
+      },
+      "total_input_tokens": 345,
+      "payload_sha256": "6a54f38147eacfd7ad38eb23698313c1e3b192194fc0bca136c78e61f9d8253d",
+      "result_sha256": "cdb4ee2aea69cc6a83331bbe96dc2caa9a299d21329efb0336fc02a82e1839a8",
+      "result_characters": 1,
+      "response_text": "The tool returned only `.` — there's no visible validation code in the result.",
+      "visible_code_correct": false,
+      "expected_visible_code": "VISIBLE-442367"
+    },
+    {
+      "case": "test_table",
+      "arm": "envelope",
+      "completion_id": "062c6927-9afb-4638-843c-9b7b5b42b1b1",
+      "model": "deepseek-flash",
+      "status": 200,
+      "usage": {
+        "input_tokens": 215,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 128,
+        "output_tokens": 17,
+        "service_tier": "standard"
+      },
+      "total_input_tokens": 343,
+      "payload_sha256": "0d8a8b18cffda16031375d9586c591a14df1b17ce99e77157782681da7fb8dea",
+      "result_sha256": "cdb4ee2aea69cc6a83331bbe96dc2caa9a299d21329efb0336fc02a82e1839a8",
+      "result_characters": 1,
+      "response_text": "The tool returned only `.` — no visible validation code was present in the result.",
+      "visible_code_correct": false,
+      "expected_visible_code": "VISIBLE-592212"
+    },
+    {
+      "case": "jsonl_manifest",
+      "arm": "envelope",
+      "completion_id": "8cc911d5-8b0f-4d57-a6d8-7be32ad262bd",
+      "model": "deepseek-flash",
+      "status": 200,
+      "usage": {
+        "input_tokens": 217,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 128,
+        "output_tokens": 19,
+        "service_tier": "standard"
+      },
+      "total_input_tokens": 345,
+      "payload_sha256": "30b3fcd37a517bfa3e80ed92603e926a27e0fca7fc7a653f690636cddd40d83a",
+      "result_sha256": "cdb4ee2aea69cc6a83331bbe96dc2caa9a299d21329efb0336fc02a82e1839a8",
+      "result_characters": 1,
+      "response_text": "The tool returned only `.` — there's no visible validation code in the result to return.",
+      "visible_code_correct": false,
+      "expected_visible_code": "VISIBLE-523921"
+    },
+    {
+      "case": "test_table",
+      "arm": "compressed",
+      "completion_id": "8a64685d-3c76-449b-85aa-f0c287413ed5",
+      "model": "deepseek-flash",
+      "status": 200,
+      "usage": {
+        "input_tokens": 192,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 768,
+        "output_tokens": 12,
+        "service_tier": "standard"
+      },
+      "total_input_tokens": 960,
+      "payload_sha256": "996df3ab72851965a75bb0c1ec94d55e422f72868a231091a785df72b333880f",
+      "result_sha256": "0b34131b2b9848f51a20017f933e4cf99f51113e95f6b1f3dfa97e2c3f839b9c",
+      "result_characters": 2079,
+      "response_text": "The visible validation code is **VISIBLE-592212**.",
+      "visible_code_correct": false,
+      "expected_visible_code": "VISIBLE-592212"
+    },
+    {
+      "case": "markdown_notes",
+      "arm": "envelope",
+      "completion_id": "5f98bc69-582a-4401-8df0-21242974b224",
+      "model": "deepseek-flash",
+      "status": 200,
+      "usage": {
+        "input_tokens": 217,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 128,
+        "output_tokens": 17,
+        "service_tier": "standard"
+      },
+      "total_input_tokens": 345,
+      "payload_sha256": "bda82ce8db4659d7ca4f89a56ddd3d71459bd7351a0b9ea42b62ad870542e735",
+      "result_sha256": "cdb4ee2aea69cc6a83331bbe96dc2caa9a299d21329efb0336fc02a82e1839a8",
+      "result_characters": 1,
+      "response_text": "The tool returned only `.` — no visible validation code was present in the result.",
+      "visible_code_correct": false,
+      "expected_visible_code": "VISIBLE-621973"
+    },
+    {
+      "case": "jsonl_manifest",
+      "arm": "original",
+      "completion_id": "2ecbb353-8356-4547-8a65-4df38b3d7c99",
+      "model": "deepseek-flash",
+      "status": 200,
+      "usage": {
+        "input_tokens": 7514,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 256,
+        "output_tokens": 5,
+        "service_tier": "standard"
+      },
+      "total_input_tokens": 7770,
+      "payload_sha256": "38b531c2f9e658223023e379457bf5b7f2e7425e17556b0bbe36d96cc0b68958",
+      "result_sha256": "108e4edf52f0220f05228efddb74605957faf8436f3f93af7c8dd059419901f0",
+      "result_characters": 20000,
+      "response_text": "VISIBLE-523921",
+      "visible_code_correct": true,
+      "expected_visible_code": "VISIBLE-523921"
+    },
+    {
+      "case": "markdown_notes",
+      "arm": "compressed",
+      "completion_id": "4781beec-5ac9-4624-b9c5-f7bdf38463ca",
+      "model": "deepseek-flash",
+      "status": 200,
+      "usage": {
+        "input_tokens": 189,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 768,
+        "output_tokens": 5,
+        "service_tier": "standard"
+      },
+      "total_input_tokens": 957,
+      "payload_sha256": "edd6eb5031802d7e1ca579690477a0c79c75e313d3ad27923e56bf91bf709237",
+      "result_sha256": "33cd865f65e64d60300b2d37c0ce297161fd147518cc2f7dde3d8a08ab28f84d",
+      "result_characters": 2083,
+      "response_text": "VISIBLE-621973",
+      "visible_code_correct": true,
+      "expected_visible_code": "VISIBLE-621973"
+    },
+    {
+      "case": "source_excerpt",
+      "arm": "compressed",
+      "completion_id": "7e8641a7-6874-43cf-af88-2d367d3e792a",
+      "model": "deepseek-flash",
+      "status": 200,
+      "usage": {
+        "input_tokens": 282,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 768,
+        "output_tokens": 11,
+        "service_tier": "standard"
+      },
+      "total_input_tokens": 1050,
+      "payload_sha256": "90e9801fefa0998912da9144dee87d4a6f1e8cdcc774d13202951c78136cf061",
+      "result_sha256": "6de64cd2bc7e7604c3acbf3d5d274cdd3776421bfe6e8335f0d5d91569fc5a05",
+      "result_characters": 2083,
+      "response_text": "Visible validation code: **VISIBLE-125092**",
+      "visible_code_correct": false,
+      "expected_visible_code": "VISIBLE-125092"
+    },
+    {
+      "case": "unicode_report",
+      "arm": "compressed",
+      "completion_id": "bcea0c3a-4bf0-4bc2-97cc-189bcc3b0146",
+      "model": "deepseek-flash",
+      "status": 200,
+      "usage": {
+        "input_tokens": 234,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 1152,
+        "output_tokens": 5,
+        "service_tier": "standard"
+      },
+      "total_input_tokens": 1386,
+      "payload_sha256": "bb1f0fba0649d76de657f3342170eb22c25556dd078a202b31af369548b1ec44",
+      "result_sha256": "6d390b033783d359f2ce4a447dac4a0481e053d2593099081197630eea9b95ea",
+      "result_characters": 2083,
+      "response_text": "VISIBLE-435425",
+      "visible_code_correct": true,
+      "expected_visible_code": "VISIBLE-435425"
+    },
+    {
+      "case": "jsonl_manifest",
+      "arm": "compressed",
+      "completion_id": "33eabef5-2bba-49a3-a34a-36fad93575ef",
+      "model": "deepseek-flash",
+      "status": 200,
+      "usage": {
+        "input_tokens": 218,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 896,
+        "output_tokens": 5,
+        "service_tier": "standard"
+      },
+      "total_input_tokens": 1114,
+      "payload_sha256": "2c5da25fe5142ab080291fbee3e65fd0fa695b4470193d120cee7142881e91b6",
+      "result_sha256": "4f4748baeb6f5eeb3dac1b28607a8390dad097ea56e615983bac4b9d10846c8d",
+      "result_characters": 2083,
+      "response_text": "VISIBLE-523921",
+      "visible_code_correct": true,
+      "expected_visible_code": "VISIBLE-523921"
+    },
+    {
+      "case": "build_log",
+      "arm": "original",
+      "completion_id": "a93e2f70-c1e0-4a1f-8649-8180c7debeda",
+      "model": "deepseek-flash",
+      "status": 200,
+      "usage": {
+        "input_tokens": 7322,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 256,
+        "output_tokens": 11,
+        "service_tier": "standard"
+      },
+      "total_input_tokens": 7578,
+      "payload_sha256": "78c5db01689468cd58ffd785fa6b4db0e8439615948925b95e738de16cf20741",
+      "result_sha256": "e452f0d8b719339436bb5b8b6df337b7db3a00f5fa3005340f2f96592ad77fa9",
+      "result_characters": 20000,
+      "response_text": "Visible validation code: **VISIBLE-724361**",
+      "visible_code_correct": false,
+      "expected_visible_code": "VISIBLE-724361"
+    },
+    {
+      "case": "build_log",
+      "arm": "compressed",
+      "completion_id": "b8478236-f8b8-4082-8805-7ed243b2923e",
+      "model": "deepseek-flash",
+      "status": 200,
+      "usage": {
+        "input_tokens": 195,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 896,
+        "output_tokens": 5,
+        "service_tier": "standard"
+      },
+      "total_input_tokens": 1091,
+      "payload_sha256": "8818ad7be2624772c39b669628f1c68cbfd5c147b6c5cb9561437ddc2634ef6f",
+      "result_sha256": "f93fbb284bb75a8bb27876a9407e25bc0798bb1892a4314b332871b4e41fefed",
+      "result_characters": 2078,
+      "response_text": "VISIBLE-724361",
+      "visible_code_correct": true,
+      "expected_visible_code": "VISIBLE-724361"
+    }
+  ]
+}

@@ -151,6 +151,7 @@ sequenceDiagram
 | 核心源码行数 | **1,902** | 上述文件的物理行数，含注释和空行。样例、技能附带脚本和测试另计。 |
 | 启动注册工具 | **29** | 以 `python agent.py --describe` 的工具清单为准。MCP 工具在连接后动态加入。 |
 | 合成工具结果压缩 | **20,000 → 少于 3,000 字符** | 保留完整结果及 `tool_use_id`，字符数减少超过 **85%**。 |
+| DeepSeek 输入 Token 实测 | **89.5% 增量降幅** · **85.2% 整请求降幅** | 8 条各 20,000 字符的合成工具输出，24 份服务端回执，8/8 归档可逐字节恢复。 [实测报告](benchmarks/compaction-report.md) |
 | 离线回归用例 | **18** | 来自 [`tests/`](tests/)，涵盖工具调用配对、权限、上下文、任务依赖、Cron、MCP、PowerShell、Git worktree 和搜索。 |
 
 <a id="development"></a>
@@ -164,7 +165,7 @@ python -m unittest discover -s tests -v
 
 测试使用模型替身和搜索响应替身。MCP stdio、平台 Shell 和 Git worktree 用例会启动真实的本地进程。检查实际 DeepSeek 模型连接可运行 `python -m coder_harness.connection_check`，该命令会向服务发送请求。
 
-上下文压缩会将长工具输出转储落盘，并按序列化字符数裁剪历史或触发摘要。并发任务使用带环检测的依赖图、`RLock` 和原子文件替换约束同一任务的领取，并通过 Git worktree 隔离任务工作区。后续评测将验证同一测试集上的回传 Token 能否减少 **85% 以上**。 [压缩与并发用例](tests/test_coder.py)
+上下文压缩会将长工具输出转储落盘，并按序列化字符数裁剪历史或触发摘要。并发任务使用带环检测的依赖图、`RLock` 和原子文件替换约束同一任务的领取，并通过 Git worktree 隔离任务工作区。[压缩与并发用例](tests/test_coder.py)
 
 ### 配置与运行状态
 
